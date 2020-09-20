@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>Front page</title> 
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .front-page{
+        position: relative;
+        height: 100vh;
+        background: url("blackBackground.png") center center no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .front-page-content{
+        max-width: 400px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .front-page-content img{
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+    }
+    .front-page-content h1{
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .front-page-content h3{
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 32px;
+    }
+    .front-page-content p{
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .front-page-content a{
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        padding: 5px 15px;
+        font-size: 14px;
+        color: #606b56;
+        background-color: #ffffff;
+        border: 1px solid #606b56;
+        border-radius: 2px;
+    }
+    .front-page-content a:hover
+    {
+        background-color: #606b56;
+        color: #ffffff;
+    }
+</style>
+<body> 
+<section class="front-page">
+    <div class="front-page-content">
+        <img src="maxresdefault.jpg" alt="">
+        <h1>John Doe</h1>
+        <h3>Programmer. Creative. Innovator</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <a href="">Know more</a>
+    </div>
+</section>
+</body>
+</html>

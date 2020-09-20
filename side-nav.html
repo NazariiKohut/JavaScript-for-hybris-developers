@@ -1,0 +1,154 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Navigation page</title> 
+</head>
+<style>
+      *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .main{
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+    }
+    aside{
+        width: 250px;
+        background-color: #C0C0C0;
+        position: sticky;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 10px;
+        box-sizing: border-box;
+    }
+    .main-content{
+        width: calc(100% - 250px);
+        background-color: #000000;
+        height: 150vh;
+    }
+    aside .logo{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+    }
+    aside h3{
+        text-align: center;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #ffffff;
+    }
+    aside nav{
+        list-style-type: none;
+        margin-top: 15px;
+        width: 100%;
+    }
+    aside li{
+        box-sizing: border-box;
+        width: 100%;
+        border-bottom: 1px dashed #787878;
+        padding: 15px 10px
+    }
+    aside a{
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 400;
+        cursor: pointer;
+        text-decoration: none;
+        transition: 0.4s ease-in-out;
+        color: #ffffff;
+    }
+    aside a img{
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        margin-right: 7px;
+    }
+    aside a:hover{
+        color: #606b56;
+    }
+    aside .navigation-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+</style>
+<body> 
+<main>
+    <section class="main">
+        <aside>
+            <div class="navigation-menu">
+                <img class="logo" src="maxresdefault.jpg" alt="">
+                <h3>John Doe</h3>
+                <nav>
+                    <li>
+                        <a href="">
+                            <img src="user.svg" alt="">
+                            About me
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="graduation-cap.svg" alt="">
+                            Education
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="pen.svg" alt="">
+                            Experience
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="diamond.svg" alt="">
+                            Skills
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="portfolio.svg" alt="">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="telegram.svg" alt="">
+                            Contacts
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="speech-bubble.svg" alt="">
+                            Feedbacks
+                        </a>
+                    </li>
+                </nav>
+            </div>
+            <div class="bottom-button">
+                 <a href="">Go back</a>
+            </div>
+        </aside>
+        <div class="main-content"></div>
+    </section>
+</main>
+</body>
+</html>
