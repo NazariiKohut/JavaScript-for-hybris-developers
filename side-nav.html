@@ -34,11 +34,6 @@
         padding: 15px 10px;
         box-sizing: border-box;
     }
-    .main-content{
-        width: calc(100% - 250px);
-        background-color: #000000;
-        height: 150vh;
-    }
     aside .logo{
         width: 100px;
         height: 100px;
@@ -90,6 +85,413 @@
         align-items: center;
         width: 100%;
     }
+    .main-content{
+        width: calc(100% - 250px);
+        background-color: #ffffff;
+        height: 150vh;
+        position: relative;
+    }
+    .toogle-menu{
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 35px;
+        height: 35px;
+        background-color: #000000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.4 ease-in-out;
+        cursor: pointer;
+    }
+    .toogle-menu img{
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+    .toogle-menu:hover{
+        opacity: 0.6;
+    }
+    .main-content-inner{
+        padding: 0 40px 40px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .main-about{
+        position: relative;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    .main-about h2{
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 700;
+        color: green;
+    }
+    .main-about p{
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        color: black;
+        margin-top: 30px;
+    }
+    .main-education{
+        position: relative;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    .main-education h2{
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 700;
+        color: green;
+    }
+    .main-education-content{
+        height: 300px;
+        width: 100%;
+        overflow-y: auto;
+        margin-top: 30px;
+    }
+    .main-education-item{
+        display: flex;
+        align-items: flex-start;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    .main-education-year{
+        width: 100px;
+        height: 100%;
+    }
+    .main-education-description{
+        width: calc(100% - 100px);
+        background-color: gray;
+        height: 100%;
+        padding: 10px 10px;
+        box-sizing: border-box;
+    }
+    .main-education-line{
+        position: relative;
+        height: 100%;
+    }
+    .main-education-line p::after{
+        content: "";
+        position: absolute;
+        left: 15px;
+        background-color: green;
+        height: 100px;
+        width: 2px;
+        transform: translateY(100%);
+        z-index: 1;
+        bottom: 0;
+    }
+    .main-education-line p{
+        display: inline flex;
+    }
+
+
+    .main-experience{
+        position: relative;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    .main-experience h2{
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 700;
+        color: green;
+    }
+    .main-experience-content{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .main-experience-item{
+        display: flex;
+        align-items: flex-start;
+        box-sizing: border-box;
+        border-bottom: 1px solid green;
+    }
+    .main-experience-year{
+        width: 200px;
+        height: 100%;
+    }
+    .main-experience-description{
+        width: calc(100% - 200px);
+        height: 100%;
+        padding: 10px 10px;
+        box-sizing: border-box;
+    }
+
+
+    .main-contact{
+        position: relative;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    .main-contact h2{
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 700;
+        color: green;
+    }
+    .main-contact-content{
+        width: 300px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .main-contact-item{
+        display: flex;
+        align-items: center;
+        height: 50px;
+    }
+    .main-contact-button{
+        height: 100%;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        border-right: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
+    .main-contact-button:last-child{
+        border-bottom: none;
+    }
+    .main-contact-button img{
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+    .main-contact-link{
+        width: calc(100% - 50px);
+        height: 100%;
+        box-sizing: border-box;
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .main-feedback{
+        position: relative;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    .main-feedback h2{
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 700;
+        color: green;
+    }
+    .main-feedback-content{
+        margin-top: 30px;
+        width: 100%;
+    }
+    .main-feedback-item{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .main-feedback-description{
+        background-color: gray;
+        padding: 10px 10px;
+        box-sizing: border-box;
+    }
+    .main-feedback-author{
+        display: flex;
+        align-items: center;
+        margin-top: -5px;
+    }
+    .main-feedback-author img{
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .main-feedback-author p{
+        margin-left: 10px;
+    }
+
+
+    .main-skills{
+        position: relative;
+        margin-bottom: 40px;
+    }
+    .main-skills-heading{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .main-skills-heading a{
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        padding: 5px 25px;
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 4px;
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+    }
+    .main-skills-heading a:hover{
+        color: black;
+        background-color: white;
+    }
+    .main-skills-heading h2{
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 700;
+        color: green;
+    }
+    .main-skills-content{
+        margin-top: 30px;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .main-skills-item{
+        margin-bottom: 7px;
+        background-color: green;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        box-sizing: border-box;
+        height: 50px;
+        padding: 0 15px;
+    }
+    .main-skills-item:last-child{
+        margin-bottom: 0;
+    }
+    .main-skills-item:nth-child(1){
+        width: 100%;
+    }
+    .main-skills-item:nth-child(2){
+        width: 80%;
+    }
+    .main-skills-item:nth-child(3){
+        width: 60%;
+    }
+    .main-skills-item:nth-child(4){
+        width: 40%;
+    }
+    .main-skills-item span{
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .main-skills-filtering{
+        border-top: 2px solid grey;
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+    .main-skills-filters{
+        display: flex;
+        align-items: center;
+    }
+    .main-skills-filter{
+        width: 150px;
+        text-align: center;
+    }
+    .main-skills-filter a{
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        color: grey;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .main-skills-filter a:hover{
+        opacity: 0.6;
+    }
+
+
+    .main-portfolio{
+        position: relative;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    .main-portfolio h2{
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 700;
+        color: green;
+    }
+    .main-portfolio-content{
+        margin-top: 30px;
+    }
+    .main-portfolio-heading{
+        display: flex;
+        align-items: center;
+    }
+    .main-portfolio-heading a{
+        margin-right: 10px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        color: grey;
+    }
+    .main-portfolio-heading a:hover{
+        opacity: 0.6;
+    }
+    .main-portfolio-items{
+        width: 500px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    .main-portfolio-item{
+        box-sizing: border-box;
+        width: calc(50% - 10px);
+        height: 250px;
+        overflow: hidden;
+        border: 1px solid grey;
+        position: relative;
+        margin: 0 5px 10px;
+    }
+    .main-portfolio-item:hover .main-portfolio-overlay{
+        transform: translateY(0);
+    }
+    .main-portfolio-inner{
+        width: 100%;
+        height: 100%;
+    }
+    .main-portfolio-inner img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .main-portfolio-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0, 0, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 15px;
+        transform: translateY(-100%);
+        transition: 0.4s ease-in-out;
+    }
+    .main-portfolio-overlay p{
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+
+
+    
+
 </style>
 <body> 
 <main>
@@ -147,7 +549,258 @@
                  <a href="">Go back</a>
             </div>
         </aside>
-        <div class="main-content"></div>
+        <div class="main-content">
+            <div class="toogle-menu">
+                <img src="right-arrow.svg" alt="">
+            </div>
+            <div class="main-content-inner">
+                <div class="main-about">
+                    <h2>About me</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis id iusto temporibus animi ad dolor sed rem est ipsa obcaecati quasi nam, sequi placeat officiis ratione, quaerat possimus excepturi hic.</p>
+                </div>
+                <div class="main-education">
+                    <h2>Education</h2>
+                    <div class="main-education-content">
+                        <div class="main-education-item">
+                            <div class="main-education-year">
+                                <div class="main-education-line">
+                                    <p>1995</p>
+                                </div>
+                            </div>
+                            <div class="main-education-description">
+                                <h3>Title</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis inventore dolores tempore architecto itaque, sunt exercitationem aperiam doloribus dignissimos, rerum aspernatur vero ea temporibus facere perferendis nulla eos eius dolorum.</p>
+                            </div>
+                        </div>
+                        <div class="main-education-item">
+                            <div class="main-education-year">
+                                <p>1996</p>
+                            </div>
+                            <div class="main-education-description">
+                                <h3>Title</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, ipsa! Incidunt asperiores deleniti repudiandae corrupti odio perspiciatis facere sint deserunt harum quo, pariatur obcaecati aut eaque. Esse hic ut repellendus.</p>
+                            </div>
+                        </div>
+                        <div class="main-education-item">
+                            <div class="main-education-year">
+                                <p>1997</p>
+                            </div>
+                            <div class="main-education-description">
+                                <h3>Title</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At nam doloremque unde aut soluta nihil tenetur recusandae, praesentium quisquam? Fugiat reprehenderit animi soluta ut ab provident sequi dolorum repudiandae deleniti?</p>
+                            </div>
+                        </div>
+                        <div class="main-education-item">
+                            <div class="main-education-year">
+                                <p>1998</p>
+                            </div>
+                            <div class="main-education-description">
+                                <h3>Title</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis inventore dolores tempore architecto itaque, sunt exercitationem aperiam doloribus dignissimos, rerum aspernatur vero ea temporibus facere perferendis nulla eos eius dolorum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-experience">
+                    <h2>Experience</h2>
+                    <div class="main-experience-content">
+                        <div class="main-experience-item">
+                            <div class="main-experience-year">
+                                <p>Google</p>
+                                <p>1995-2000</p>
+                            </div>
+                            <div class="main-experience-description">
+                                <h3>Title</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis inventore dolores tempore architecto itaque, sunt exercitationem aperiam doloribus dignissimos, rerum aspernatur vero ea temporibus facere perferendis nulla eos eius dolorum.</p>
+                            </div>
+                        </div>
+                        <div class="main-experience-item">
+                            <div class="main-experience-year">
+                                <p>Twitter</p>
+                                <p>2000</p>
+                            </div>
+                            <div class="main-experience-description">
+                                <h3>Title</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis inventore dolores tempore architecto itaque, sunt exercitationem aperiam doloribus dignissimos, rerum aspernatur vero ea temporibus facere perferendis nulla eos eius dolorum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-contact">
+                    <h2>Contacts</h2>
+                    <div class="main-contact-content">
+                        <div class="main-contact-item">
+                            <div class="main-contact-button">
+                                <img src="portfolio.svg" alt="">
+                            </div>
+                            <div class="main-contact-link">
+                                <p>skype</p>
+                            </div>
+                        </div>
+                        <div class="main-contact-item">
+                            <div class="main-contact-button">
+                                <img src="portfolio.svg" alt="">
+                            </div>
+                            <div class="main-contact-link">
+                                <p>Number</p>
+                            </div>
+                        </div>
+                        <div class="main-contact-item">
+                            <div class="main-contact-button">
+                                <img src="portfolio.svg" alt="">
+                            </div>
+                            <div class="main-contact-link">
+                                <p>Email</p>
+                            </div>
+                        </div>
+                        <div class="main-contact-item">
+                            <div class="main-contact-button">
+                                <img src="portfolio.svg" alt="">
+                            </div>
+                            <div class="main-contact-link">
+                                <p>Twitter</p>
+                            </div>
+                        </div>
+                        <div class="main-contact-item">
+                            <div class="main-contact-button">
+                                <img src="portfolio.svg" alt="">
+                            </div>
+                            <div class="main-contact-link">
+                                <p>Facebook</p>
+                            </div>
+                        </div>
+                        <div class="main-contact-item">
+                            <div class="main-contact-button">
+                                <img src="portfolio.svg" alt="">
+                            </div>
+                            <div class="main-contact-link">
+                                <p>Skype</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-feedback">
+                    <h2>Feedbacks</h2>
+                    <div class="main-feedback-content">
+                        <div class="main-feedback-item">
+                            <div class="main-feedback-description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laboriosam assumenda excepturi modi exercitationem natus suscipit amet illum, sed voluptatem illo id architecto ipsa, rerum perspiciatis. Officiis doloremque commodi ratione!</p>
+                            </div>
+                            <div class="main-feedback-author">
+                                <img src="maxresdefault.jpg" alt="">
+                                <p>Author</p>
+                            </div>
+                        </div>
+                        <div class="main-feedback-item">
+                            <div class="main-feedback-description">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo molestias quo saepe, reprehenderit sunt illo ea? Obcaecati laboriosam facilis voluptatem asperiores dolore, tempore quia natus sapiente est corrupti praesentium! Omnis!</p>
+                            </div>
+                            <div class="main-feedback-author">
+                                <img src="maxresdefault.jpg" alt="">
+                                <p>Author</p>
+                                
+                            </div>
+                        </div>
+                        <div class="main-feedback-item">
+                            <div class="main-feedback-description">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae in impedit vero iusto dolorum neque facilis sunt perferendis fugit beatae odit molestiae dignissimos dolor placeat accusamus, nihil dolorem molestias voluptatem.</p>
+
+                            </div>
+                            <div class="main-feedback-author">
+                                <img src="maxresdefault.jpg" alt="">
+                                <p>Author</p>
+                                
+                            </div>
+                        </div>
+                        <div class="main-feedback-item">
+                            <div class="main-feedback-description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nobis quas voluptate illo labore incidunt quis! Illo, amet. Quas voluptatibus fugiat delectus similique non quia nostrum optio, reiciendis cupiditate dicta.</p>
+
+                            </div>
+                            <div class="main-feedback-author">
+                                <img src="maxresdefault.jpg" alt="">
+                                <p>Author</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-skills">
+                    <div class="main-skills-heading">
+                        <h2>Skills</h2>
+                        <a href="">Edit</a>
+                    </div>
+                    <div class="main-skills-content">
+                        <div class="main-skills-item">
+                            <span>Java</span>
+                        </div>
+                        <div class="main-skills-item">
+                            <span>Java</span>
+                        </div>
+                        <div class="main-skills-item">
+                            <span>Java</span>
+                        </div>
+                        <div class="main-skills-item">
+                            <span>Java</span>
+                        </div>
+                    </div>
+                    <div class="main-skills-filtering">
+                        <div class="main-skills-filters">
+                            <div class="main-skills-filter">
+                                <a href="">first</a>
+                            </div>
+                            <div class="main-skills-filter">
+                                <a href="">second</a>
+                            </div>
+                        </div>
+                        <div class="main-skills-filters">
+                            <div class="main-skills-filter">
+                                <a href="">third</a>
+                            </div>
+                            <div class="main-skills-filter">
+                                <a href="">four</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-portfolio">
+                    <h2>Portfolio</h2>
+                    <div class="main-portfolio-content">
+                        <div class="main-portfolio-heading">
+                            <a href="">all</a>
+                            <a href="">code</a>
+                            <a href="">ui</a>
+                        </div>
+                        <div class="main-portfolio-items">
+                            <div class="main-portfolio-item">
+                                <div class="main-portfolio-inner">
+                                    <img src="maxresdefault.jpg" alt="">
+                                </div>
+                                <div class="main-portfolio-overlay">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div class="main-portfolio-item">
+                                <div class="main-portfolio-inner">
+                                    <img src="maxresdefault.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="main-portfolio-item">
+                                <div class="main-portfolio-inner">
+                                    <img src="maxresdefault.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="main-portfolio-item">
+                                <div class="main-portfolio-inner">
+                                    <img src="maxresdefault.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 </main>
 </body>
